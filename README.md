@@ -1,11 +1,11 @@
-## Voting
+# Voting
 small projcet on voting created using Jdbc-servlet
 
-#Changes in web.xml
+## Changes in web.xml
 add directory name name in url 
 add your user name and password 
 
-# add related tabels 
+## add related tabels 
 #table
 create table users (id int primary key auto_increment,first_name varchar(20),last_name varchar(20),
 email varchar(20) unique,password varchar(20),dob date,status boolean,role varchar(20));
