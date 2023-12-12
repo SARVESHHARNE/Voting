@@ -26,4 +26,4 @@ insert into candidates values(default,'kiran','congress',0);
 insert into candidates values(default,'riya','sp',0);
 insert into candidates values(default,'subhash','aap',0);
 
-# You can add more candidates under same political party , for party wise , votes 
+#You can add more candidates under same political party , for party wise , votes 
