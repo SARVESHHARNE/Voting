@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>voteForme</display-name>
+	<welcome-file-list>
+		<welcome-file>login.html</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>abc</servlet-name>
+		<servlet-class>pages.UserLogin</servlet-class>
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:mysql://localhost:3306/advjava?createDatabaseIfNotExist=true&amp;useSSL=false&amp;allowPublicKeyRetrieval=true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>root</param-value>
+		</init-param>
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>root123</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<context-param>
+		<param-name>url</param-name>
+		<param-value>jdbc:mysql://localhost:3306/advjava?createDatabaseIfNotExist=true&amp;useSSL=false&amp;allowPublicKeyRetrieval=true</param-value>
+	</context-param>
+	<context-param>
+		<param-name>user</param-name>
+		<param-value>root</param-value>
+	</context-param>
+	<context-param>
+		<param-name>pass</param-name>
+		<param-value>root123</param-value>
+	</context-param>
+
+
+	<servlet-mapping>
+		<servlet-name>abc</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+</web-app>
